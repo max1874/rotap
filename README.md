@@ -4,6 +4,10 @@ English | [简体中文](README.zh-CN.md)
 
 Rotap is an open-source system audio recorder for macOS. Record what your Mac is playing — every app or just one — optionally mixed with your microphone. A native macOS app: no virtual audio driver, no changes to your speaker or headphone setup.
 
+<a href="https://max1874.com/rotap/"><img src="docs/demo.en.gif" width="600" alt="Rotap's recorder: the waveform changes with what you record"></a>
+
+<sub>A recorded demo from [max1874.com/rotap](https://max1874.com/rotap/), where you can try it yourself.</sub>
+
 ![Rotap playing back a recording](docs/screenshots/en-player.png)
 
 ## Features

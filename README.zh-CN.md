@@ -4,6 +4,10 @@
 
 Rotap 是一个开源的 macOS 系统声音录音机。录下 Mac 正在播放的声音，也可以同时录麦克风。原生 macOS App，不装虚拟声卡，不改你的扬声器或耳机设置。
 
+<a href="https://max1874.com/rotap/"><img src="docs/demo.zh.gif" width="600" alt="Rotap 的录音界面：波形随录制内容变化"></a>
+
+<sub>动图录自 [max1874.com/rotap](https://max1874.com/rotap/)，那里可以亲手试。</sub>
+
 ![Rotap 播放一段录音](docs/screenshots/zh-player.png)
 
 ## 功能
