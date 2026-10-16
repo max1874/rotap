@@ -2,7 +2,7 @@
 
 English | [简体中文](README.zh-CN.md)
 
-Record what your Mac is playing — every app or just one — optionally mixed with your microphone. A native macOS app: no virtual audio driver, no changes to your speaker or headphone setup.
+Rotap is an open-source system audio recorder for macOS. Record what your Mac is playing — every app or just one — optionally mixed with your microphone. A native macOS app: no virtual audio driver, no changes to your speaker or headphone setup.
 
 ![Rotap playing back a recording](docs/screenshots/en-player.png)
 
@@ -30,6 +30,22 @@ Requires **macOS 26** or later. The interface is in English and Simplified Chine
 | Microphone | The first time you record the microphone | Recording your voice |
 
 Recordings are saved only on your Mac (`~/Music/Rotap` by default, changeable in Settings). Rotap makes no network connections and uploads nothing.
+
+## FAQ
+
+**How do I record internal audio on a Mac?**
+QuickTime Player's New Audio Recording only captures a microphone. Rotap reads what the system is playing through Apple's Core Audio process tap API: open Rotap, choose System Audio, press record, and allow the system audio recording permission the first time macOS asks.
+
+**How is it different from BlackHole or Soundflower?**
+BlackHole and Soundflower are virtual audio devices: you switch your output to them, and to keep hearing the sound you build a Multi-Output Device in Audio MIDI Setup. Rotap installs no driver and leaves your output device alone; it listens to the system's output directly.
+
+**Can it record both sides of a call?**
+Yes. Choose System Audio + Microphone and the other side's audio, as it reaches your speakers or headphones, is mixed with your microphone into one file. It works with any app that makes sound (Zoom, Teams, Google Meet in a browser, …), with no bot joining the call.
+
+**Can it record just one app?**
+Yes. Pick a single app that is currently playing as the source, and sounds from other apps stay out of the recording.
+
+More on the [Rotap page](https://max1874.com/rotap/).
 
 ## Building from source
 
